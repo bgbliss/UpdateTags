@@ -1,0 +1,24 @@
+{
+  "name": "updatetags",
+  "version": "1.0.0",
+  "description": "Console Application that updates a single product's tag",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgbliss/UpdateTags.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgbliss/UpdateTags/issues"
+  },
+  "homepage": "https://github.com/bgbliss/UpdateTags#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.0.1",
+    "shopify-api-node": "^2.25.1"
+  }
+}

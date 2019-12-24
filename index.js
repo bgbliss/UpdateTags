@@ -25,12 +25,13 @@ getUserId = () =>{
 }
 
 vailidateId =  async (id)=>{
-    let get = await getId(id);
-    if(get){
+    let getTags = await getId(id);
+    if(getTags){
         console.log(`========================================
         \nCurrent Tags: 
-        \n${get.tags} 
+        \n${getTags.tags} 
         \n========================================`)
+        RemoveTags(getTags.tags)
     }
     else
     {
@@ -39,3 +40,15 @@ vailidateId =  async (id)=>{
     }
 }
 getUserId()
+
+RemoveTags = (tags) =>{
+    inquirer.prompt([
+        {
+            type: "confirm",
+            message: "Do you want to remove any of the tags",
+            name: "input"      
+        }
+    ]).then((answer)=>{
+        //console.log(answer)
+    })
+}
